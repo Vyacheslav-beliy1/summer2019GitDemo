@@ -28,6 +28,34 @@ class ViewController: UIViewController {
 	}
 
 	@IBAction func showActionSheet() {
+
+		enum Films: String {
+			case film1 = "Человек Паук"
+			case film2 = "Алладин"
+		}
+
+		let alert = UIAlertController(title: nil, message: "Choose Film", preferredStyle: .actionSheet)
+
+		let handler:(_ type: Films) -> (UIAlertAction) -> Void =
+		{ type in
+			//sdf/asdf//asd/f/asdf/
+			//asdfasdfasdf
+			return { action in
+				//asdf/asdf/as/df/asdf/a/sdf/asdf
+				print(type.rawValue)
+			}
+		}
+
+		let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+		alert.addAction(cancelAction)
+
+		let film1 = UIAlertAction(title: Films.film1.rawValue, style: .default, handler: handler(.film1))
+		alert.addAction(film1)
+
+		let film2 = UIAlertAction(title: Films.film2.rawValue, style: .default, handler: handler(.film2))
+		alert.addAction(film2)
+
+		present(alert, animated: true, completion: nil)
 	}
 }
 
