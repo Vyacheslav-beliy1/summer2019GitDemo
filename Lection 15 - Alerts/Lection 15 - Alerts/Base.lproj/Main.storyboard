@@ -48,6 +48,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="296" y="21"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="q9C-N9-kgt">
@@ -92,7 +93,7 @@
         <!--View Controller Three-->
         <scene sceneID="dQt-3n-fHs">
             <objects>
-                <viewController id="efo-1p-kpj" customClass="ViewControllerThree" customModule="Lection_15___Alerts" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewControllerThree" id="efo-1p-kpj" customClass="ViewControllerThree" customModule="Lection_15___Alerts" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZEg-s3-g4b">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -139,7 +140,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UH1-bJ-ccT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1501.449275362319" y="63.616071428571423"/>
+            <point key="canvasLocation" x="1965" y="21"/>
         </scene>
     </scenes>
 </document>
