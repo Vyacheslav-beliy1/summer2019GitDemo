@@ -32,23 +32,19 @@ class ViewController: UIViewController {
 		enum Films: String {
 			case film1 = "Человек Паук"
 			case film2 = "Алладин"
-            case SkubiDo = "Skubi Do"
-			case song = "Какао, какаоке, ко-ко-ко"
-			case film3 = "Лысая гора"
-            case film4 = "Вечное сияние чистого разума"
 		}
 
 		let alert = UIAlertController(title: nil, message: "Choose Film", preferredStyle: .actionSheet)
 
-        let handler:(_ type: Films) -> (UIAlertAction) -> Void =
-        { type in
-            //sdf/asdf//asd/f/asdf/
-            //asdfasdfasdf
-            return { action in
-                //asdf/asdf/as/df/asdf/a/sdf/asdf
-                print(type.rawValue)
-            }
-        }
+		let handler:(_ type: Films) -> (UIAlertAction) -> Void =
+		{ type in
+			//sdf/asdf//asd/f/asdf/
+			//asdfasdfasdf
+			return { action in
+				//asdf/asdf/as/df/asdf/a/sdf/asdf
+				print(type.rawValue)
+			}
+		}
 
 		let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
 		alert.addAction(cancelAction)
@@ -58,18 +54,6 @@ class ViewController: UIViewController {
 
 		let film2 = UIAlertAction(title: Films.film2.rawValue, style: .default, handler: handler(.film2))
 		alert.addAction(film2)
-
-        let SkubiDo = UIAlertAction(title: Films.SkubiDo.rawValue, style: .default, handler: handler(.SkubiDo))
-        alert.addAction(SkubiDo)
-
-        let film3 = UIAlertAction(title: Films.film3.rawValue, style: .default, handler: handler(.film3))
-        alert.addAction(film3)
-
-		let song = UIAlertAction(title: Films.song.rawValue, style: .default, handler: handler(.song))
-		alert.addAction(song)
-
-		let film4 = UIAlertAction(title: Films.film4.rawValue, style: .default, handler: handler(.film4))
-		alert.addAction(film4)
 
 		present(alert, animated: true, completion: nil)
 	}
