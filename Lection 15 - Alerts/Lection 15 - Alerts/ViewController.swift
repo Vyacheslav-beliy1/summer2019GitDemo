@@ -15,7 +15,13 @@ class ViewController: UIViewController {
 		// Do any additional setup after loading the view.
 	}
 
-	@IBAction func showAlert() {
+    @IBAction func moveForward(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "")
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    @IBAction func showAlert() {
 		let alert = UIAlertController(title: "Photo Access", message: "Do you alow to use your photos?", preferredStyle: .alert)
 
 		let okAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
@@ -34,7 +40,7 @@ class ViewController: UIViewController {
 			case film2 = "Алладин"
             case film3 = "Black Mirror"
 			case song = "Какао, какаоке, ко-ко-ко"
-			case film3 = "Лысая гора"
+			case film6 = "Лысая гора"
             case film4 = "Вечное сияние чистого разума"
             case film5 = "Дом"
         }
@@ -69,7 +75,7 @@ class ViewController: UIViewController {
 		let film4 = UIAlertAction(title: Films.film4.rawValue, style: .default, handler: handler(.film4))
 		alert.addAction(film4)
         
-        let film5 = UIAlertAction(title: Films.film5.rawValue, style: .default, handler: handler(.film4))
+        let film5 = UIAlertAction(title: Films.film5.rawValue, style: .default, handler: handler(.film5))
         alert.addAction(film5)
 
 		present(alert, animated: true, completion: nil)
