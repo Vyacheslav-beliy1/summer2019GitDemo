@@ -16,7 +16,13 @@ class ViewControllerThree: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func backButtonTouched(_ sender: Any) {
+//        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: <#T##String#>)
+    }
+    
+    @IBAction func closeButtonTouched(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 
