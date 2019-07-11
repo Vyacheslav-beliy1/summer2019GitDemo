@@ -9,7 +9,4 @@ class TheFirstViewController: UIViewController {
 
     }
     
-    @IBAction func showTheSecondVC(_ sender: Any) {
-        
-    }
 }
