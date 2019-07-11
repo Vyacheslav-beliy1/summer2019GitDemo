@@ -10,17 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBAction func goBack(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-    }
+   
     override func viewDidLoad() {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view.
 	}
 
+    @IBAction func didTapBack(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
     @IBAction func moveForward(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "")
+        let vc = storyboard.instantiateViewController(withIdentifier: "teamID")
         self.present(vc, animated: true, completion: nil)
     }
     
