@@ -32,7 +32,7 @@ class ViewController: UIViewController {
 		enum Films: String {
 			case film1 = "Человек Паук"
 			case film2 = "Алладин"
-            case film3 = "Black Mirror"
+            case black = "Black Mirror"
 			case song = "Какао, какаоке, ко-ко-ко"
 			case film3 = "Лысая гора"
             case film4 = "Вечное сияние чистого разума"
@@ -60,8 +60,8 @@ class ViewController: UIViewController {
 		let film2 = UIAlertAction(title: Films.film2.rawValue, style: .default, handler: handler(.film2))
 		alert.addAction(film2)
         
-        let film3 = UIAlertAction(title: Films.film3.rawValue, style: .default, handler: handler(.film3))
-        alert.addAction(film3)
+        let black = UIAlertAction(title: Films.black.rawValue, style: .default, handler: handler(.black))
+        alert.addAction(black)
 
 		let song = UIAlertAction(title: Films.song.rawValue, style: .default, handler: handler(.song))
 		alert.addAction(song)
