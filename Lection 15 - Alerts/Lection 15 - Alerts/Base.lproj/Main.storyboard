@@ -110,6 +110,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xQX-er-BSs">
                                 <rect key="frame" x="10" y="714" width="394" height="98"/>
                                 <state key="normal" title="Show modaly"/>
+                                <connections>
+                                    <action selector="showTheSecondVC:" destination="yIm-RV-pnn" eventType="touchUpInside" id="mjF-ec-HSZ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
