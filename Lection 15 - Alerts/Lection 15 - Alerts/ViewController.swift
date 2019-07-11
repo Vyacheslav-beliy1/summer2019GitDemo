@@ -32,6 +32,7 @@ class ViewController: UIViewController {
 		enum Films: String {
 			case film1 = "Человек Паук"
 			case film2 = "Алладин"
+            case film3 = "Black Mirror"
 			case song = "Какао, какаоке, ко-ко-ко"
 			case film3 = "Лысая гора"
             case film4 = "Вечное сияние чистого разума"
