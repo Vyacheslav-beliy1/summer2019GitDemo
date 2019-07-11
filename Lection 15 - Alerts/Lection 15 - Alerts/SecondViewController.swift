@@ -16,8 +16,9 @@ class SecondViewController: UIViewController {
        
     }
     @IBAction func NextButton(_ sender: Any) {
-        let nextButton = UIButton()
-        
+      
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewControllerThree")
+        self.present(vc, animated: true)
         
     }
     
@@ -25,7 +26,7 @@ class SecondViewController: UIViewController {
     
     
     @IBAction func PreviousButton(_ sender: Any) {
-        let buttonPrevious = UIButton()
+      
         self.dismiss(animated: true, completion: nil)
     }
 }

@@ -146,30 +146,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sC2-B5-aQg">
-                                <rect key="frame" x="174" y="340" width="32" height="30"/>
-                                <state key="normal" title="Next"/>
-                                <connections>
-                                    <action selector="NextButton:" destination="6KR-4v-Mzl" eventType="touchUpInside" id="loy-bx-vhr"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSO-ny-p92">
-                                <rect key="frame" x="161" y="433" width="59" height="30"/>
-                                <state key="normal" title="Previous"/>
-                                <connections>
-                                    <action selector="PreviousButton:" destination="6KR-4v-Mzl" eventType="touchUpInside" id="CI9-pE-NHb"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="63" translatesAutoresizingMaskIntoConstraints="NO" id="8IF-Fh-eQm">
+                                <rect key="frame" x="177.5" y="391.5" width="59" height="123"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sC2-B5-aQg">
+                                        <rect key="frame" x="0.0" y="0.0" width="59" height="30"/>
+                                        <state key="normal" title="Next"/>
+                                        <connections>
+                                            <action selector="NextButton:" destination="6KR-4v-Mzl" eventType="touchUpInside" id="loy-bx-vhr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSO-ny-p92">
+                                        <rect key="frame" x="0.0" y="93" width="59" height="30"/>
+                                        <state key="normal" title="Previous"/>
+                                        <connections>
+                                            <action selector="PreviousButton:" destination="6KR-4v-Mzl" eventType="touchUpInside" id="CI9-pE-NHb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="kPr-1B-9gc" firstAttribute="trailing" secondItem="aSO-ny-p92" secondAttribute="trailing" constant="194" id="79Y-Ou-8Yp"/>
-                            <constraint firstItem="sC2-B5-aQg" firstAttribute="leading" secondItem="kPr-1B-9gc" secondAttribute="leading" constant="174" id="B7N-gC-ZXX"/>
-                            <constraint firstItem="kPr-1B-9gc" firstAttribute="trailing" secondItem="sC2-B5-aQg" secondAttribute="trailing" constant="208" id="ERR-uf-Qtt"/>
-                            <constraint firstItem="kPr-1B-9gc" firstAttribute="bottom" secondItem="aSO-ny-p92" secondAttribute="bottom" constant="399" id="HIp-JV-uK9"/>
-                            <constraint firstItem="sC2-B5-aQg" firstAttribute="top" secondItem="kPr-1B-9gc" secondAttribute="top" constant="296" id="HaO-aD-5Lu"/>
-                            <constraint firstItem="aSO-ny-p92" firstAttribute="top" secondItem="sC2-B5-aQg" secondAttribute="bottom" constant="63" id="QyO-L0-6dc"/>
-                            <constraint firstItem="aSO-ny-p92" firstAttribute="leading" secondItem="kPr-1B-9gc" secondAttribute="leading" constant="161" id="YD9-oL-oRw"/>
+                            <constraint firstItem="8IF-Fh-eQm" firstAttribute="centerY" secondItem="kPr-1B-9gc" secondAttribute="centerY" id="gEy-0Q-Lou"/>
+                            <constraint firstItem="8IF-Fh-eQm" firstAttribute="centerX" secondItem="kPr-1B-9gc" secondAttribute="centerX" id="jZt-sf-4B4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kPr-1B-9gc"/>
                     </view>
@@ -181,7 +181,7 @@
         <!--View Controller Three-->
         <scene sceneID="dQt-3n-fHs">
             <objects>
-                <viewController id="efo-1p-kpj" customClass="ViewControllerThree" customModule="Lection_15___Alerts" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewControllerThree" id="efo-1p-kpj" customClass="ViewControllerThree" customModule="Lection_15___Alerts" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZEg-s3-g4b">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
